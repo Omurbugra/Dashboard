@@ -1,0 +1,136 @@
+/* 1. Global reset & mount‐point styling */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  font-family: sans-serif;
+  background: #f0f4f8;
+}
+
+/* 2. Header */
+.header {
+  padding: 16px 24px;
+  background: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.header select {
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  background: #f8fafc;
+}
+
+/* 3. Main 2×2 grid */
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 16px;
+  padding: 24px;
+  height: calc(100vh - 72px);
+  box-sizing: border-box;
+}
+
+/* 4. Shared panel style */
+.grid-item {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* 5. Data table styling */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  flex: 1;
+}
+.data-table th,
+.data-table td {
+  padding: 8px 12px;
+}
+.data-table thead th {
+  background: #e0e7ff;
+  color: #3730a3;
+  text-align: left;
+}
+.data-table tbody tr:nth-child(odd) {
+  background: #f8fafc;
+}
+
+/* 6. Canvas wrapper (now fills entire grid‐cell minus .grid-item padding/gap) */
+.canvas-wrapper {
+  flex: 1;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.canvas-wrapper canvas {
+  width: 100%  !important;
+  height: 100% !important;
+  display: block;
+}
+
+/* 7. Chart wrapper */
+.chart-wrapper {
+  flex: 1;
+  position: relative;
+}
+.chart-wrapper canvas {
+  width: 100%  !important;
+  height: 100% !important;
+  display: block;
+}
+
+/* 8. Calculator card styling */
+.calculator {
+  background: linear-gradient(135deg, #ffffff 0%, #f0f4f8 100%);
+  padding: 16px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.calculator h3 {
+  margin: 0;
+  color: #1e293b;
+  font-size: 1.2rem;
+}
+.calc-field {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.calc-field label {
+  flex: 1;
+  color: #475569;
+  font-weight: 500;
+}
+.calc-input {
+  flex: 1;
+  padding: 6px 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  font-size: 1rem;
+  background: #ffffff;
+}
+.calc-results {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.calc-results .result {
+  display: flex;
+  justify-content: space-between;
+  color: #334155;
+}
+.calc-results .result strong {
+  color: #0f172a;
+}

@@ -1,0 +1,116 @@
+[
+  {
+    "id": "reference",
+    "name": "Reference (No PV)",
+    "url": "/models/ref-model.glb",
+    "dataList": [
+      { "label": "Energy demand (kWh/m²)", "value": "62.44" },
+      { "label": "Cooling (kWh/m²)",        "value": "45.92" },
+      { "label": "Heating (kWh/m²)",        "value": "0.00"  },
+      { "label": "Lighting (kWh/m²)",       "value": "16.52" },
+      { "label": "PV (kWh/m²)",             "value": "0.00"  },
+      { "label": "Load matching (%)",       "value": "0.00"  }
+    ],
+    "chartValues": {
+      "cooling": 45.92,
+      "heating": 0.0,
+      "lighting": 16.52,
+      "pv": 0.0
+    }
+  },
+  {
+    "id": "opaque-facade",
+    "name": "Opaque façade",
+    "url": "/models/ref-model.glb",
+    "dataList": [
+      { "label": "Energy demand (kWh/m²)", "value": "55.00" },
+      { "label": "Cooling (kWh/m²)",        "value": "30.00" },
+      { "label": "Heating (kWh/m²)",        "value": "10.00" },
+      { "label": "Lighting (kWh/m²)",       "value": "15.00" },
+      { "label": "PV (kWh/m²)",             "value": "0.00"  },
+      { "label": "Load matching (%)",       "value": "0.00"  }
+    ],
+    "chartValues": {
+      "cooling": 30.0,
+      "heating": 10.0,
+      "lighting": 15.0,
+      "pv": 0.0
+    }
+  },
+  {
+    "id": "semi-pv-a-si",
+    "name": "Semi-transparent PV glazing with a-Si solar cells",
+    "url": "/models/ref-model.glb",
+    "dataList": [
+      { "label": "Energy demand (kWh/m²)", "value": "48.00" },
+      { "label": "Cooling (kWh/m²)",        "value": "28.00" },
+      { "label": "Heating (kWh/m²)",        "value": "12.00" },
+      { "label": "Lighting (kWh/m²)",       "value": "8.00"  },
+      { "label": "PV (kWh/m²)",             "value": "-20.00"},
+      { "label": "Load matching (%)",       "value": "40.00" }
+    ],
+    "chartValues": {
+      "cooling": 28.0,
+      "heating": 12.0,
+      "lighting": 8.0,
+      "pv": -20.0
+    }
+  },
+  {
+    "id": "semi-pv-c-si",
+    "name": "Semi-transparent PV glazing with c-Si solar cells",
+    "url": "/models/ref-model.glb",
+    "dataList": [
+      { "label": "Energy demand (kWh/m²)", "value": "47.00" },
+      { "label": "Cooling (kWh/m²)",        "value": "27.00" },
+      { "label": "Heating (kWh/m²)",        "value": "11.00" },
+      { "label": "Lighting (kWh/m²)",       "value": "9.00"  },
+      { "label": "PV (kWh/m²)",             "value": "-22.00"},
+      { "label": "Load matching (%)",       "value": "45.00" }
+    ],
+    "chartValues": {
+      "cooling": 27.0,
+      "heating": 11.0,
+      "lighting": 9.0,
+      "pv": -22.0
+    }
+  },
+  {
+    "id": "pv-louvers",
+    "name": "PV louvers",
+    "url": "/models/ref-model.glb",
+    "dataList": [
+      { "label": "Energy demand (kWh/m²)", "value": "47.00" },
+      { "label": "Cooling (kWh/m²)",        "value": "24.00" },
+      { "label": "Heating (kWh/m²)",        "value": "13.00" },
+      { "label": "Lighting (kWh/m²)",       "value": "10.00" },
+      { "label": "PV (kWh/m²)",             "value": "-25.00"},
+      { "label": "Load matching (%)",       "value": "50.00" }
+    ],
+    "chartValues": {
+      "cooling": 24.0,
+      "heating": 13.0,
+      "lighting": 10.0,
+      "pv": -25.0
+    }
+  },
+  {
+    "id": "pv-overhang",
+    "name": "PV overhang",
+    "url": "/models/ref-model.glb",
+    "dataList": [
+      { "label": "Energy demand (kWh/m²)", "value": "49.59" },
+      { "label": "Cooling (kWh/m²)",        "value": "25.22" },
+      { "label": "Heating (kWh/m²)",        "value": "14.77" },
+      { "label": "Lighting (kWh/m²)",       "value": "9.60"  },
+      { "label": "PV (kWh/m²)",             "value": "-26.75"},
+      { "label": "Load matching (%)",       "value": "53.60" }
+    ],
+    "chartValues": {
+      "cooling": 25.22,
+      "heating": 14.77,
+      "lighting": 9.6,
+      "pv": -26.75
+    }
+  }
+]
