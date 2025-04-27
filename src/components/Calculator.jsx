@@ -28,15 +28,15 @@ export function Calculator({ values }) {
             <div className="calc-results">
                 <div className="result">
                     <span>Consumption Cost</span>
-                    <span>€{cost.toFixed(2)}</span>
+                    <span>₺{cost.toFixed(2)}</span>
                 </div>
                 <div className="result savings">
                     <span>Generation Savings</span>
-                    <span>€{savings.toFixed(2)}</span>
+                    <span>₺{savings.toFixed(2)}</span>
                 </div>
                 <div className="result net">
                     <strong>Net Cost</strong>
-                    <strong>€{net.toFixed(2)}</strong>
+                    <strong>₺{net.toFixed(2)}</strong>
                 </div>
             </div>
 
