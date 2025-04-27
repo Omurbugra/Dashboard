@@ -3,10 +3,13 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls, useGLTF } from '@react-three/drei';
 
 function Model({ url }) {
-    const { scene } = useGLTF(url);
+    // prepend Vite baseURL so “models/…” resolves correctly under GitHub Pages
+    const path = import.meta.env.BASE_URL + url;
+    const { scene } = useGLTF(path);
     // Rotate 180° clockwise around Y
     return <primitive object={scene} rotation={[0, -Math.PI, 0]} />;
 }
+
 
 export function ModelViewer({ url }) {
     return (
