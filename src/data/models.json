@@ -2,7 +2,7 @@
   {
     "id": "reference",
     "name": "Reference (No PV)",
-    "url": "/models/ref-model.glb",
+    "url": "/models/Reference.glb",
     "dataList": [
       { "label": "Energy demand (kWh/m²)", "value": "62.44" },
       { "label": "Cooling (kWh/m²)",        "value": "45.92" },
@@ -21,7 +21,7 @@
   {
     "id": "opaque-facade",
     "name": "Opaque façade",
-    "url": "/models/ref-model.glb",
+    "url": "/models/opaque.glb",
     "dataList": [
       { "label": "Energy demand (kWh/m²)", "value": "55.00" },
       { "label": "Cooling (kWh/m²)",        "value": "30.00" },
@@ -40,7 +40,7 @@
   {
     "id": "semi-pv-a-si",
     "name": "Semi-transparent PV glazing with a-Si solar cells",
-    "url": "/models/ref-model.glb",
+    "url": "/models/Semi-a-Si.glb",
     "dataList": [
       { "label": "Energy demand (kWh/m²)", "value": "48.00" },
       { "label": "Cooling (kWh/m²)",        "value": "28.00" },
@@ -59,7 +59,7 @@
   {
     "id": "semi-pv-c-si",
     "name": "Semi-transparent PV glazing with c-Si solar cells",
-    "url": "/models/ref-model.glb",
+    "url": "/models/Semi-c-Si.glb",
     "dataList": [
       { "label": "Energy demand (kWh/m²)", "value": "47.00" },
       { "label": "Cooling (kWh/m²)",        "value": "27.00" },
@@ -78,7 +78,7 @@
   {
     "id": "pv-louvers",
     "name": "PV louvers",
-    "url": "/models/ref-model.glb",
+    "url": "/models/pv louvers.glb",
     "dataList": [
       { "label": "Energy demand (kWh/m²)", "value": "47.00" },
       { "label": "Cooling (kWh/m²)",        "value": "24.00" },
@@ -97,7 +97,7 @@
   {
     "id": "pv-overhang",
     "name": "PV overhang",
-    "url": "/models/ref-model.glb",
+    "url": "/models/pv overhang.glb",
     "dataList": [
       { "label": "Energy demand (kWh/m²)", "value": "49.59" },
       { "label": "Cooling (kWh/m²)",        "value": "25.22" },
