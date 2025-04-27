@@ -4,17 +4,17 @@
     "name": "Reference (No PV)",
     "url": "/models/Reference.glb",
     "dataList": [
-      { "label": "Energy demand (kWh/m²)", "value": "62.44" },
-      { "label": "Cooling (kWh/m²)",        "value": "45.92" },
-      { "label": "Heating (kWh/m²)",        "value": "0.00"  },
-      { "label": "Lighting (kWh/m²)",       "value": "16.52" },
+      { "label": "Energy demand (kWh/m²)", "value": "63.42" },
+      { "label": "Cooling (kWh/m²)",        "value": "46.13" },
+      { "label": "Heating (kWh/m²)",        "value": "8.39"  },
+      { "label": "Lighting (kWh/m²)",       "value": "8.9" },
       { "label": "PV (kWh/m²)",             "value": "0.00"  },
       { "label": "Load matching (%)",       "value": "0.00"  }
     ],
     "chartValues": {
-      "cooling": 45.92,
-      "heating": 0.0,
-      "lighting": 16.52,
+      "cooling": 46.13,
+      "heating": 8.39,
+      "lighting": 8.9,
       "pv": 0.0
     }
   },
@@ -23,18 +23,18 @@
     "name": "Opaque façade",
     "url": "/models/opaque.glb",
     "dataList": [
-      { "label": "Energy demand (kWh/m²)", "value": "55.00" },
-      { "label": "Cooling (kWh/m²)",        "value": "30.00" },
-      { "label": "Heating (kWh/m²)",        "value": "10.00" },
-      { "label": "Lighting (kWh/m²)",       "value": "15.00" },
-      { "label": "PV (kWh/m²)",             "value": "0.00"  },
-      { "label": "Load matching (%)",       "value": "0.00"  }
+      { "label": "Energy demand (kWh/m²)", "value": "63.93" },
+      { "label": "Cooling (kWh/m²)",        "value": "46.69" },
+      { "label": "Heating (kWh/m²)",        "value": "8.34" },
+      { "label": "Lighting (kWh/m²)",       "value": "8.9" },
+      { "label": "PV (kWh/m²)",             "value": "-27.5"  },
+      { "label": "Load matching (%)",       "value": "46.5"  }
     ],
     "chartValues": {
-      "cooling": 30.0,
-      "heating": 10.0,
-      "lighting": 15.0,
-      "pv": 0.0
+      "cooling": 46.49,
+      "heating": 8.34,
+      "lighting": 8.9,
+      "pv": -27.5
     }
   },
   {
@@ -42,18 +42,18 @@
     "name": "Semi-transparent PV glazing with a-Si solar cells",
     "url": "/models/Semi-a-Si.glb",
     "dataList": [
-      { "label": "Energy demand (kWh/m²)", "value": "48.00" },
-      { "label": "Cooling (kWh/m²)",        "value": "28.00" },
-      { "label": "Heating (kWh/m²)",        "value": "12.00" },
-      { "label": "Lighting (kWh/m²)",       "value": "8.00"  },
-      { "label": "PV (kWh/m²)",             "value": "-20.00"},
-      { "label": "Load matching (%)",       "value": "40.00" }
+      { "label": "Energy demand (kWh/m²)", "value": "59.60" },
+      { "label": "Cooling (kWh/m²)",        "value": "21.55" },
+      { "label": "Heating (kWh/m²)",        "value": "23.65" },
+      { "label": "Lighting (kWh/m²)",       "value": "14.40" },
+      { "label": "PV (kWh/m²)",             "value": "-11.51" },
+      { "label": "Load matching (%)",       "value": "44.3" }
     ],
     "chartValues": {
-      "cooling": 28.0,
-      "heating": 12.0,
-      "lighting": 8.0,
-      "pv": -20.0
+      "cooling": 21.55,
+      "heating": 23.65,
+      "lighting": 14.40,
+      "pv": -11.51
     }
   },
   {
@@ -61,18 +61,18 @@
     "name": "Semi-transparent PV glazing with c-Si solar cells",
     "url": "/models/Semi-c-Si.glb",
     "dataList": [
-      { "label": "Energy demand (kWh/m²)", "value": "47.00" },
-      { "label": "Cooling (kWh/m²)",        "value": "27.00" },
-      { "label": "Heating (kWh/m²)",        "value": "11.00" },
-      { "label": "Lighting (kWh/m²)",       "value": "9.00"  },
-      { "label": "PV (kWh/m²)",             "value": "-22.00"},
-      { "label": "Load matching (%)",       "value": "45.00" }
+      { "label": "Energy demand (kWh/m²)", "value": "66.07" },
+      { "label": "Cooling (kWh/m²)",        "value": "17.23" },
+      { "label": "Heating (kWh/m²)",        "value": "31.24" },
+      { "label": "Lighting (kWh/m²)",       "value": "17.60" },
+      { "label": "PV (kWh/m²)",             "value": "-29.55" },
+      { "label": "Load matching (%)",       "value": "44.3" }
     ],
     "chartValues": {
-      "cooling": 27.0,
-      "heating": 11.0,
-      "lighting": 9.0,
-      "pv": -22.0
+      "cooling": 17.23,
+      "heating": 31.24,
+      "lighting": 17.60,
+      "pv": -29.55
     }
   },
   {
@@ -80,18 +80,18 @@
     "name": "PV louvers",
     "url": "/models/pv louvers.glb",
     "dataList": [
-      { "label": "Energy demand (kWh/m²)", "value": "47.00" },
-      { "label": "Cooling (kWh/m²)",        "value": "24.00" },
-      { "label": "Heating (kWh/m²)",        "value": "13.00" },
-      { "label": "Lighting (kWh/m²)",       "value": "10.00" },
-      { "label": "PV (kWh/m²)",             "value": "-25.00"},
-      { "label": "Load matching (%)",       "value": "50.00" }
+      { "label": "Energy demand (kWh/m²)", "value": "64.85" },
+      { "label": "Cooling (kWh/m²)",        "value": "27.11" },
+      { "label": "Heating (kWh/m²)",        "value": "25.85" },
+      { "label": "Lighting (kWh/m²)",       "value": "11.90" },
+      { "label": "PV (kWh/m²)",             "value": "-19.19" },
+      { "label": "Load matching (%)",       "value": "40.10" }
     ],
     "chartValues": {
-      "cooling": 24.0,
-      "heating": 13.0,
-      "lighting": 10.0,
-      "pv": -25.0
+      "cooling": 27.11,
+      "heating": 25.85,
+      "lighting": 11.90,
+      "pv": -19.19
     }
   },
   {
@@ -102,14 +102,14 @@
       { "label": "Energy demand (kWh/m²)", "value": "49.59" },
       { "label": "Cooling (kWh/m²)",        "value": "25.22" },
       { "label": "Heating (kWh/m²)",        "value": "14.77" },
-      { "label": "Lighting (kWh/m²)",       "value": "9.60"  },
-      { "label": "PV (kWh/m²)",             "value": "-26.75"},
+      { "label": "Lighting (kWh/m²)",       "value": "9.60" },
+      { "label": "PV (kWh/m²)",             "value": "-26.75" },
       { "label": "Load matching (%)",       "value": "53.60" }
     ],
     "chartValues": {
       "cooling": 25.22,
       "heating": 14.77,
-      "lighting": 9.6,
+      "lighting": 9.60,
       "pv": -26.75
     }
   }
