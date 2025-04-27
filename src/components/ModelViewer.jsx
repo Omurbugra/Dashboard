@@ -16,7 +16,7 @@ export function ModelViewer({ url }) {
         <Canvas
             // moved camera further back, raised up a bit
             camera={{ position: [24, 15, 20], fov: 50 }}
-            style={{ background: '#e8f0fa' }}
+            style={{ background: 'linear-gradient(135deg, #c2ddff 0%, #ffffff 100%)' }}
             gl={{ antialias: true }}
         >
             {/* Brighter ambient + hemisphere fill */}

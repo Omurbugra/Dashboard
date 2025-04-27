@@ -15,7 +15,7 @@ export function Calculator({ values }) {
             <h3>Cost Calculator</h3>
 
             <div className="calc-field">
-                <label>Price (€ / kWh):</label>
+                <label>Price (₺ / kWh):</label>
                 <input
                     type="number"
                     className="calc-input"
@@ -30,15 +30,17 @@ export function Calculator({ values }) {
                     <span>Consumption Cost</span>
                     <span>€{cost.toFixed(2)}</span>
                 </div>
-                <div className="result">
+                <div className="result savings">
                     <span>Generation Savings</span>
                     <span>€{savings.toFixed(2)}</span>
                 </div>
-                <div className="result">
+                <div className="result net">
                     <strong>Net Cost</strong>
                     <strong>€{net.toFixed(2)}</strong>
                 </div>
             </div>
+
+
         </div>
     );
 }

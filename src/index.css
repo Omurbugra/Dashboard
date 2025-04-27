@@ -37,9 +37,10 @@ html, body, #root {
 /* 4. Shared panel style */
 .grid-item {
   background: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-  padding: 16px;
+  border: 1px solid rgba(0,0,0,0.25);
+  border-radius: 0x;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  padding: 0px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -90,23 +91,26 @@ html, body, #root {
 
 /* 8. Calculator card styling */
 .calculator {
+  flex: 1;
   background: linear-gradient(135deg, #ffffff 0%, #f0f4f8 100%);
   padding: 16px 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border: 0px solid #cbd5e1;
+  border-radius: 0px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0);
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 5px;
 }
 .calculator h3 {
-  margin: 0;
+  margin-top: 18px;
   color: #1e293b;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 .calc-field {
   display: flex;
   align-items: center;
   gap: 12px;
+  margin-bottom: 12px;
 }
 .calc-field label {
   flex: 1;
@@ -124,16 +128,43 @@ html, body, #root {
 .calc-results {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 18px;
 }
 .calc-results .result {
   display: flex;
   justify-content: space-between;
   color: #334155;
+
 }
 .calc-results .result strong {
   color: #0f172a;
+  margin-top: 4px;
 }
+
+/* Color each result line differently */
+.result span:first-child {
+  color: #64748b;  /* soft blue-gray for labels */
+  font-weight: 500;
+}
+
+.result span:last-child {
+  color: #dc2626;  /* blue for numbers */
+  font-weight: 600;
+}
+
+
+
+/* Special green color ONLY for Generation Savings amount */
+.result.savings span:last-child {
+  color: #16a34a;  /* green */
+}
+
+.result.net {
+  border-top: 1px solid #cbd5e1; /* light gray line */
+  padding-top: 12px; /* space after the line */
+  margin-top: 5px; /* slight spacing */
+}
+
 
 /* NavBar styling */
 .nav-bar {
@@ -142,8 +173,8 @@ html, body, #root {
   justify-content: space-between;
   padding: 0 24px;
   height: 64px;
-  background: #ffffff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  background: linear-gradient(90deg, #10b981 0%, #3b82f6 100%);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.8);
 }
 .nav-left, .nav-right {
   display: flex;
@@ -162,8 +193,19 @@ html, body, #root {
   gap: 12px;
 }
 .nav-select-label {
-  font-size: 0.9rem;
-  color: #475569;
+  font-size: 1rem;
+  color: #1e293b;
+  font-weight: 600;
+}
+.nav-select-label select {
+  margin-left: 6px;
+  padding: 6px 10px;
+  border: 1px solid #94a3b8;
+  border-radius: 6px;
+  background: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1e293b;
 }
 .nav-select-label select {
   margin-left: 6px;
@@ -172,3 +214,4 @@ html, body, #root {
   border-radius: 4px;
   background: #f8fafc;
 }
+
