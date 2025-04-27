@@ -1,6 +1,6 @@
 {
   "name": "3dinterface",
-  "homepage": "https://github.com/Omurbugra/Dashboard/",
+  "homepage": "https://omurbugra.github.io/Dashboard",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,8 +10,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-  }
+    "deploy": "gh-pages -d dist"
+  },
   "dependencies": {
     "@react-three/drei": "^10.0.7",
     "@react-three/fiber": "^9.1.2",
