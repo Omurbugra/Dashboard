@@ -9,9 +9,9 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",      // runs automatically before “deploy”
-    "deploy": "gh-pages -d dist",       // publishes the “dist” folder
-  },
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+  }
   "dependencies": {
     "@react-three/drei": "^10.0.7",
     "@react-three/fiber": "^9.1.2",
