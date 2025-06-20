@@ -18,20 +18,19 @@ const ArrowPlugin = {
         const zeroY = y.getPixelForValue(0);
         const hasNegative = chart.data.datasets.some(ds => ds.data.some(v => v < 0));
         const xPos = right + 20;
-        const labelOffset = 12; // pixels to offset text from arrow spine
+        const labelOffset = 12;
 
-        // Draw consumption arrow (black)
+        // Draw consumption arrow
         ctx.save();
         ctx.strokeStyle = '#000';
         ctx.fillStyle = '#000';
         ctx.lineWidth = 1;
 
-        // arrow line
         ctx.beginPath();
         ctx.moveTo(xPos, zeroY);
         ctx.lineTo(xPos, top);
         ctx.stroke();
-        // arrowhead
+
         ctx.beginPath();
         ctx.moveTo(xPos, top);
         ctx.lineTo(xPos - 5, top + 10);
@@ -39,7 +38,6 @@ const ArrowPlugin = {
         ctx.closePath();
         ctx.fill();
 
-        // label along spine, offset to the right
         const midYcons = (zeroY + top) / 2;
         ctx.save();
         ctx.translate(xPos + labelOffset, midYcons);
@@ -49,19 +47,17 @@ const ArrowPlugin = {
         ctx.fillText('Consumption', 0, 0);
         ctx.restore();
 
-        // Draw generation arrow (gray) if needed
         if (hasNegative) {
             ctx.save();
             ctx.strokeStyle = 'gray';
             ctx.fillStyle = 'gray';
             ctx.lineWidth = 1;
 
-            // arrow line
             ctx.beginPath();
             ctx.moveTo(xPos, zeroY);
             ctx.lineTo(xPos, bottom);
             ctx.stroke();
-            // arrowhead
+
             ctx.beginPath();
             ctx.moveTo(xPos, bottom);
             ctx.lineTo(xPos - 5, bottom - 10);
@@ -69,7 +65,6 @@ const ArrowPlugin = {
             ctx.closePath();
             ctx.fill();
 
-            // label along spine, offset to the right
             const midYgen = (zeroY + bottom) / 2;
             ctx.save();
             ctx.translate(xPos + labelOffset, midYgen);
@@ -95,20 +90,40 @@ ChartJS.register(
 );
 
 export function BarChart({ chartData, chartOptions }) {
-    // merge in DPR + no aspect-ratio so it fills its wrapper fully
     const options = {
         barPercentage: 0.4,
         ...chartOptions,
         maintainAspectRatio: false,
         devicePixelRatio: window.devicePixelRatio,
-        layout: { // add right padding to accommodate arrows
+        layout: {
             padding: { right: 50 }
         },
         plugins: {
             ...chartOptions.plugins,
             arrowPlugin: {}
+        },
+        scales: {
+            ...chartOptions.scales,
+            x: {
+                ...(chartOptions.scales?.x || {}),
+                ticks: {
+                    callback: function (value) {
+                        const label = this.getLabelForValue(value);
+                        if (label.length > 25) {
+                            return [label.slice(0, 25), label.slice(25)];
+                        }
+                        return label;
+                    },
+                    maxRotation: 0,
+                    minRotation: 0
+                }
+            }
         }
     };
 
-    return <Bar data={chartData} options={options} />;
+    return (
+        <div className="chart-wrapper">
+            <Bar data={chartData} options={options} />
+        </div>
+    );
 }
